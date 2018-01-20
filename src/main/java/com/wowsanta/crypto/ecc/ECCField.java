@@ -4,9 +4,10 @@ import java.security.spec.ECField;
 
 public class ECCField implements ECField {
 
-	@Override
 	public int getFieldSize() {
+		// TODO Auto-generated method stub
 		return 0;
 	}
+
 
 }
