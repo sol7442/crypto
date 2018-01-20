@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<directory>
+  <file name="TestCryptoStreams.java" icon_position="470,262"/>
+  <file name="SillyCryptoSystem.java" icon_position="35,262"/>
+  <file name="CryptoOutputStream.java" icon_position="473,46"/>
+  <file name="CryptoInputStream.java" icon_position="181,46"/>
+</directory>

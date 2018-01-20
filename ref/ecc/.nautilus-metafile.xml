@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<directory>
+  <file name="RIPEMD160.java" icon_position="535,260"/>
+  <file name="RIPEMD160.class" icon_position="390,251"/>
+  <file name="Rand.java" icon_position="245,260"/>
+  <file name="Rand.class" icon_position="100,251"/>
+  <file name="Key.java" icon_position="535,160"/>
+  <file name="Key.class" icon_position="390,151"/>
+  <file name="CryptoSystem.java" icon_position="245,60"/>
+  <file name="CryptoSystem.class" icon_position="100,51"/>
+</directory>
