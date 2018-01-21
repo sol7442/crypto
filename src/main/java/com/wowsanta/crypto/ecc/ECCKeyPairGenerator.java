@@ -15,7 +15,9 @@ public class ECCKeyPairGenerator extends KeyPairGeneratorSpi{
 
 	@Override
 	public void initialize(int keysize, SecureRandom random) {
-		// TODO Auto-generated method stub
+		
+	}
+	public void initialize(int keysize){
 		
 	}
 	

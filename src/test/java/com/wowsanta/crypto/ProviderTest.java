@@ -4,11 +4,20 @@ import java.security.KeyPair;
 import java.security.KeyPairGenerator;
 import java.security.NoSuchAlgorithmException;
 import java.security.NoSuchProviderException;
+import java.security.Provider;
 
+import org.junit.Before;
 import org.junit.Test;
 
 public class ProviderTest {
 
+	private Provider provider;
+	@Before
+	public void loadProvider(){
+		provider = WowsantaProvider.addProvider();
+		System.out.println("PROVIDER : " + provider.getInfo());
+	}
+	
 	@Test
 	public void sunProvider(){
 		try {
@@ -30,8 +39,16 @@ public class ProviderTest {
 			e.printStackTrace();
 		}
 	}
-	
+	//@Test
 	public void wowProvider(){
-		//KeyPairGenerator.
+		KeyPairGenerator kpg;
+		try {
+			kpg = KeyPairGenerator.getInstance("EC", provider.getName());
+			System.out.println("kpg : " + kpg.getAlgorithm());
+		} catch (NoSuchAlgorithmException e) {
+			e.printStackTrace();
+		} catch (NoSuchProviderException e) {
+			e.printStackTrace();
+		}
 	}
 }

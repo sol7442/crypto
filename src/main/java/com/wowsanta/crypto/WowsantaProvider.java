@@ -3,6 +3,8 @@ package com.wowsanta.crypto;
 import java.security.Provider;
 import java.security.Security;
 
+import com.wowsanta.crypto.ecc.ECCKeyPairGenerator;
+
 public class WowsantaProvider extends Provider{
 
 	/**
@@ -14,7 +16,7 @@ public class WowsantaProvider extends Provider{
 	private static  Version ver = new Version();
 	
 	public WowsantaProvider() {		
-		super(NAME, ver.get(), NAME + " Security Provider :" + ver);
+		super(NAME, ver.get(), NAME + " Security Provider : " + ver);
 		putAlgorithm();
 	}
 
@@ -48,5 +50,7 @@ public class WowsantaProvider extends Provider{
 		//Signature
 		//SecureRandom
 		//Cipher 
+		//System.out.println(ECCKeyPairGenerator.class.getCanonicalName());
+		put("KeyPairGenerator.EC",ECCKeyPairGenerator.class.getCanonicalName());
 	}
 }
